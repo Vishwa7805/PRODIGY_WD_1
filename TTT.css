@@ -1,0 +1,127 @@
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --red: #b41f1f;
+    --orange: #ec6408;
+    --grey: #d8aa89;
+    --brown: #9e3900;
+    --white: white;
+    --yellow: yellow;
+}
+
+.highlight {
+    background-color: var(--yellow) !important;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey);
+}
+
+h1 {
+    color: var(--white);
+    font-size: 42px;
+}
+
+.container {
+    width: 900px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px var(--red) solid;
+    background-color: var(--red);
+    border-radius: 30px;
+}
+
+.sub_container {
+    display: flex;
+    align-items: center;
+}
+
+.player_1, .player_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px var(--orange) solid;
+    background-color: var(--orange);
+    width: 150px;
+    height: 150px;
+    margin: 30px;
+}
+
+.player_name {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.player_1_score, .player_2_score {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.game_container {
+    border-radius: 20px;
+    border: 1px var(--grey) solid;
+    background-color: var(--grey);
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+}
+
+.player_1_display, .player_2_display {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.box {
+    border: 1px var(--brown) solid;
+    background-color: var(--brown);
+    margin: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-size: 50px;
+}
+
+.newgame_btn {
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 20px;
+    background-color: var(--orange);
+    border: 1px var(--orange) solid;
+    color: var(--white);
+    cursor: pointer;
+    outline: none;
+    transition: 0.5s;
+}
+
+.newgame_btn:hover {
+    background-color: var(--brown);
+}
+
+.player_1_container, .player_2_container {
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
